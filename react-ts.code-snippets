@@ -41,7 +41,7 @@
             "type Props = {",
             "};",
             "",
-            "const ${1:MyComponent} :FunctionComponent<Props> = () => {",
+            "export const ${1:MyComponent} :FunctionComponent<Props> = () => {",
             "",
             "",
             "    return (",
@@ -49,7 +49,6 @@
             "    );",
             "}",
             "",
-            "export default ${1:MyComponent};"
         ]
     }
 }
