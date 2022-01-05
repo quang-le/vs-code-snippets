@@ -1,0 +1,55 @@
+{
+    "Context Component": {
+        "scope": "typescript,typescriptreact",
+        "description": "Context Template",
+        "prefix": "ctx",
+        "body": [
+            "import React,{FunctionComponent, createContext, useReducer, useEffect} from 'react';",
+            "",
+            "",
+            "type ${1:My}ContextObject = {",
+            "};",
+            "",
+            "const defaultContext : ${1:My}ContextObject = {",
+            "};",
+            "const ${1:My}Context = createContext<${1:My}ContextObject>(defaultContext);",
+            "",
+            "const ${1:My}ContextProvider :FunctionComponent = ({children}) => {",
+            "",
+            "    //TODO: SET CONTEXTVALUE",
+            "    const contextValue :${1:My}ContextObject={};",
+            "",
+            "",
+            "    return (",
+            "        <${1:My}Context.Provider value = {contextValue}>",
+            "            {children}",
+            "        </${1:My}Context.Provider>",
+            "    );",
+            "};",
+            "",
+            "export {${1:My}Context,${1:My}ContextProvider};"
+        ]
+    },
+
+    "Function Component": {
+        "scope": "typescript,typescriptreact",
+        "description": "Basic Function Component Template",
+        "prefix": "funccomp",
+        "body": [
+            "import React,{FunctionComponent} from 'react';",
+            "",
+            "type Props = {",
+            "};",
+            "",
+            "const ${1:MyComponent} :FunctionComponent<Props> = () => {",
+            "",
+            "",
+            "    return (",
+            "        <div></div>",
+            "    );",
+            "}",
+            "",
+            "export default ${1:MyComponent};"
+        ]
+    }
+}
