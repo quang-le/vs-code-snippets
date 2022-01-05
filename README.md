@@ -9,7 +9,7 @@ Some snippets for VSCode.
 - The keyboard shortcut is the `prefix` value.
 
 ## Further development
-It's a just ome snippets I did, that I put out there in case someone else finds it useful, so I'm don't have big expansion plans beyond adding snippets for the next thing that I find makes me waste my time, and maybe a script to pull new snippets and add them automatically to VSCode
+It's just some snippets I made and put out there in case someone else finds them useful, so I'm don't have big expansion plans beyond adding snippets for the next thing that I find makes me waste my time, and maybe a script to pull new snippets and add them automatically to VSCode.
 
 ## Contribute
 Edit the existing file or add a new one, then open a PR 🙂
