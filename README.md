@@ -4,7 +4,7 @@ Some snippets for VSCode.
 ## How to install
 
 - Clone the repo
-- Copy the `.code-snippets` file in the project's `/.vscode` folder. Create it if it doesn't exist
+- Copy the `.code-snippets` file in the project's `/.vscode` folder. Create the folder if it doesn't exist
 - Restart vscode
 - The keyboard shortcut is the `prefix` value.
 
