@@ -50,5 +50,44 @@
             "}",
             "",
         ]
+    }, "Cypress test":{
+        "scope": "typescript,typescriptreact, javascript, javascriptreact",
+        "description": "Boilerplate for Iaso Cypress test",
+        "prefix": "cytest",
+        "body": [
+            "/// <reference types='cypress' />",
+            "",
+            "import superUser from '../../fixtures/profiles/me/superuser.json';",
+            "",
+            "const siteBaseUrl = Cypress.env('siteBaseUrl');",
+            "",
+            "const baseUrl = `${siteBaseUrl}/`; // TODO Complete URL",
+            "",
+            "// TODO populate list",
+            "const interceptList = [",
+            "    'profiles',",
+            "];",
+            "",
+            "// TODO Rename test",
+            "describe('MY TEST', () => {",
+            "    beforeEach(() => {",
+            "        cy.login();",
+            "        cy.intercept('GET', '/api/profiles/**', {",
+            "            fixture: 'profiles/list.json',",
+            "        });",
+            "        interceptList.forEach(i => {",
+            "            cy.intercept('GET', `/api/\\${i}/**`, {",
+            "                fixture: `\\${i}/list.json`,",
+            "            });",
+            "        });",
+            "        cy.intercept('GET', '/sockjs-node/**');",
+            "    });",
+            "    // TODO Rename test",
+            "    describe('MY TEST', () => {});",
+            "});"
+        ]
+
+
+
     }
 }
