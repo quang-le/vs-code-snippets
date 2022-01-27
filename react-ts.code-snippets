@@ -61,7 +61,7 @@
             "",
             "const siteBaseUrl = Cypress.env('siteBaseUrl');",
             "",
-            "const baseUrl = `${siteBaseUrl}/`; // TODO Complete URL",
+            "const baseUrl = `\\${siteBaseUrl}/`; // TODO Complete URL",
             "",
             "// TODO populate list",
             "const interceptList = [",
